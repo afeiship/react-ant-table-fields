@@ -1,27 +1,26 @@
-import { HTMLAttributes } from 'react';
-
 /**
  * @Author: aric.zheng 1290657123@qq.com
  * @Date: 2025-11-05 15:28:32
  * @LastEditors: aric.zheng 1290657123@qq.com
- * @LastEditTime: 2025-11-05 15:42:39
+ * @LastEditTime: 2025-11-05 15:55:57
  */
 import React from 'react';
 import { LinkOutlined } from '@ant-design/icons';
-import { Space } from 'antd';
+import { Space, Typography } from 'antd';
+import { LinkProps } from 'antd/es/typography/Link';
 
 export type UrlFieldProps = {
   value: string;
-} & HTMLAttributes<HTMLAnchorElement>
+} & LinkProps
 
 export function UrlField(props: UrlFieldProps) {
   const { value, ...rest } = props;
   return (
-    <a href={value} {...rest}>
+    <Typography.Link href={value} {...rest}>
       <Space>
         {value}
         <LinkOutlined />
       </Space>
-    </a>
+    </Typography.Link>
   );
 }

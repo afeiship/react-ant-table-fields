@@ -1,6 +1,7 @@
 import {
   BooleanField,
   DateField,
+  EmailField,
   HtmlField,
   ImageField,
   TagField,
@@ -25,6 +26,10 @@ function App() {
           <DateField className="inline-block" value={new Date()} />
           <DateField className="inline-block" format="datetime" value="2025-11-05T03:18:06+08:00" />
           <DateField className="inline-block" format="time" value="2025-11-05T03:18:06+08:00" />
+        </div>
+        <hr />
+        <div className="x-2">
+          <EmailField value={'hello@world.com'} />
         </div>
         <hr />
         <div className="x-2">
