@@ -4,7 +4,7 @@ import {
   EmailField,
   HtmlField,
   ImageField,
-  TagField,
+  TagField, TextField,
   UrlField,
 } from '@jswork/react-ant-table-fields/src/main';
 import '@jswork/react-ant-table-fields/src/style.scss';
@@ -44,6 +44,11 @@ function App() {
         <div>
           <TagField value="published" />
           <TagField value="draft" color="green" />
+        </div>
+        <hr />
+        <div className="y-2">
+          <TextField value="一些文本" />
+          <TextField className="text-slate-500 text-xs" value="一些文本测试，可复制" copyable />
         </div>
         <hr />
         <div>
