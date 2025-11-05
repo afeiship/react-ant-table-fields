@@ -1,4 +1,4 @@
-import ReactAntTableFields from '@jswork/react-ant-table-fields/src/main';
+import { BooleanField } from '@jswork/react-ant-table-fields/src/main';
 import '@jswork/react-ant-table-fields/src/style.scss';
 
 function App() {
@@ -7,9 +7,10 @@ function App() {
       <div className="badge badge-warning absolute right-0 top-0 m-4">
         Build Time: {BUILD_TIME}
       </div>
-      <ReactAntTableFields className="debug-red">
-        abc
-      </ReactAntTableFields>
+      <div>
+        <BooleanField value={true} title="Yes" />
+        <BooleanField value={false} title="No" />
+      </div>
     </div>
   );
 }

@@ -1,3 +1,1 @@
-import ReactAntTableFields from '.';
-
-export default ReactAntTableFields;
+export * from './fields/boolean-field';
