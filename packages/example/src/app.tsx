@@ -1,4 +1,4 @@
-import { BooleanField, DateField, ImageField, UrlField } from '@jswork/react-ant-table-fields/src/main';
+import { BooleanField, DateField, ImageField, TagField, UrlField } from '@jswork/react-ant-table-fields/src/main';
 import '@jswork/react-ant-table-fields/src/style.scss';
 import React from 'react';
 
@@ -22,6 +22,11 @@ function App() {
         <hr />
         <div>
           <ImageField className="size-20" value="https://tva1.js.work/large/007S8ZIlgy1gexw87htqhj305k05k74o.jpg" />
+        </div>
+        <hr />
+        <div>
+          <TagField value="published" />
+          <TagField value="draft" color="green" />
         </div>
         <hr />
         <div>
