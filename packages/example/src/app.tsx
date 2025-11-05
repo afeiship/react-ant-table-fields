@@ -1,4 +1,11 @@
-import { BooleanField, DateField, ImageField, TagField, UrlField } from '@jswork/react-ant-table-fields/src/main';
+import {
+  BooleanField,
+  DateField,
+  HtmlField,
+  ImageField,
+  TagField,
+  UrlField,
+} from '@jswork/react-ant-table-fields/src/main';
 import '@jswork/react-ant-table-fields/src/style.scss';
 import React from 'react';
 
@@ -18,6 +25,11 @@ function App() {
           <DateField className="inline-block" value={new Date()} />
           <DateField className="inline-block" format="datetime" value="2025-11-05T03:18:06+08:00" />
           <DateField className="inline-block" format="time" value="2025-11-05T03:18:06+08:00" />
+        </div>
+        <hr />
+        <div className="x-2">
+          <HtmlField value="<h3>Hello</h1>" />
+          <HtmlField value="<span>world</h1>" />
         </div>
         <hr />
         <div>
