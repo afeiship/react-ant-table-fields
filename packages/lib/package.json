@@ -1,6 +1,6 @@
 {
   "name": "@jswork/react-ant-table-fields",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/main.cjs.js",
   "module": "dist/main.esm.js",
   "types": "dist/main.d.ts",
@@ -43,5 +43,12 @@
   },
   "dependencies": {
     "@jswork/simple-date-format": "^1.0.6"
-  }
+  },
+  "keywords": [
+    "ant",
+    "column",
+    "field",
+    "react",
+    "table"
+  ]
 }
