@@ -1,5 +1,6 @@
-import { BooleanField } from '@jswork/react-ant-table-fields/src/main';
+import { BooleanField, DateField } from '@jswork/react-ant-table-fields/src/main';
 import '@jswork/react-ant-table-fields/src/style.scss';
+import React from 'react';
 
 function App() {
   return (
@@ -7,9 +8,17 @@ function App() {
       <div className="badge badge-warning absolute right-0 top-0 m-4">
         Build Time: {BUILD_TIME}
       </div>
-      <div>
-        <BooleanField value={true} title="Yes" />
-        <BooleanField value={false} title="No" />
+      <div className="y-4">
+        <div className="x-2 *:border-2 *:px-1 *:rounded-3xl border-gray-300 ">
+          <BooleanField className="inline-block" value={true} title="Yes" />
+          <BooleanField className="inline-block" value={false} title="No" />
+        </div>
+        <hr />
+        <div className="y-2 *:text-blue-500">
+          <DateField className="inline-block" value={new Date()} />
+          <DateField className="inline-block" format="datetime" value="2025-11-05T03:18:06+08:00" />
+          <DateField className="inline-block" format="time" value="2025-11-05T03:18:06+08:00" />
+        </div>
       </div>
     </div>
   );
